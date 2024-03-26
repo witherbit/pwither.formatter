@@ -1,5 +1,5 @@
 # pwither.formatter
-#### Замена BinaryFormatter для .net 7.0 и более поздних версий.
+#### Замена BinaryFormatter для .net 8.0 и более поздних версий.
 
 BinaryFormatter, возможно, будет удален в .NET 9. Этот код скопирован из .NET 8.0, поэтому он полностью независим.
 
