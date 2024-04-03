@@ -1,10 +1,21 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk">
 
   <PropertyGroup>
-    <TargetFramework>net8.0</TargetFramework>
+    <TargetFramework>net7.0</TargetFramework>
     <ImplicitUsings>enable</ImplicitUsings>
     <Nullable>enable</Nullable>
     <AllowUnsafeBlocks>True</AllowUnsafeBlocks>
+    <Title>pwither.formatter</Title>
+    <Authors>Witherbit</Authors>
+    <Description>RU: Замена отключенному в .NET 7.0 и выше BinaryFormatter
+EN: Replacing the disabled in .NET 7.0 and higher BinaryFormatter</Description>
+    <Copyright>Witherbit 2024</Copyright>
+    <PackageProjectUrl>https://github.com/witherbit/pwither.formatter</PackageProjectUrl>
+    <PackageIcon>wbax.png</PackageIcon>
+    <PackageReadmeFile>README (2).md</PackageReadmeFile>
+    <PackageTags>binaryformatter;net8</PackageTags>
+    <GeneratePackageOnBuild>True</GeneratePackageOnBuild>
+    <Version>1.0.1</Version>
   </PropertyGroup>
 
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
@@ -14,5 +25,19 @@
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|AnyCPU'">
     <IsAotCompatible>True</IsAotCompatible>
   </PropertyGroup>
+
+  <ItemGroup>
+    <None Include="C:\Users\Tanukii\Downloads\wbax.png">
+      <Pack>True</Pack>
+      <PackagePath>\</PackagePath>
+    </None>
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Update="README %282%29.md">
+      <Pack>True</Pack>
+      <PackagePath>\</PackagePath>
+    </None>
+  </ItemGroup>
 
 </Project>

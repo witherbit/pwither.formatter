@@ -3,7 +3,7 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.9.34616.47
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "pwither.formatter", "pwither.formatter\pwither.formatter.csproj", "{B4B9A348-D61A-4C93-A9E1-367654DDBB58}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "pwither.formatter", "pwither.formatter\pwither.formatter.csproj", "{B4B9A348-D61A-4C93-A9E1-367654DDBB58}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
