@@ -118,8 +118,16 @@ var packager = BitSerializer.Deserialize<Packager>(byteArray);
 
 Если возникнут проблемы, вы можете воспользоваться нативными методами, указав каждый требуемый тип для сериализации вручную:
 ```csharp
-var byteArray = BitSerializer.SerializeNative(packager, typeof(Packager), typeof(PackagerInfo), typeof(Package), typeof(FilePart));
-var packager = BitSerializer.DeserializeNative<Packager>(byteArray, typeof(Packager), typeof(PackagerInfo), typeof(Package), typeof(FilePart));
+var byteArray = BitSerializer.SerializeNative(packager,
+    typeof(Packager),
+    typeof(PackagerInfo),
+    typeof(Package),
+    typeof(FilePart));
+var packager = BitSerializer.DeserializeNative<Packager>(byteArray,
+    typeof(Packager),
+    typeof(PackagerInfo),
+    typeof(Package),
+    typeof(FilePart));
 ```
 
 Вы должны понимать, что это довольно сырая имплементация BinaryFormatter, и в большинстве случаев я рекомендую использовать вам Json или Xml, так как оригинальный BinaryFormatter больше не поддерживается из-за того, что это небезопасно, грубо говоря злоумышленник с помощью бинарной десериализации может вызвать отказ в обслуживании, выполнить произвольный код или раскрыть конфиденциальную информацию, с учетом того, что информационная безопасность становится неотъемлемой частью жизни, эти уязвимости для многих юридических и физических лиц являются критическими, более подробно о причинах отказа от BinaryFormatter написано в [Руководстве по безопасности BinaryFormatter](https://learn.microsoft.com/ru-ru/dotnet/standard/serialization/binaryformatter-security-guide "странице Microsoft")
